@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="FitFlow — Aplicación web de gestión de rutinas de fitness con autenticación JWT, CRUD de ejercicios, calendario semanal y gráficos de progreso." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests;" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>FitFlow — Ángel Saiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">&#60;Dev/&#62;</div>
+    <a href="index.html" class="back-btn">← Volver al portfolio</a>
+  </nav>
+
+  <main class="project-detail">
+
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <div class="project-hero-meta">
+          <span class="project-tag">App Web</span>
+          <span class="project-tag tag-secondary">Full Stack</span>
+        </div>
+        <h1 class="project-hero-title">FitFlow</h1>
+        <p class="project-hero-desc">
+          Aplicación web completa para gestión de rutinas de fitness. Diseñada para que los usuarios
+          puedan organizar sus entrenamientos, registrar el progreso de pesos por ejercicio y
+          visualizar su evolución mediante gráficos interactivos.
+        </p>
+        <div class="project-hero-links">
+          <a href="https://github.com/angelsg22/fitflow" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Ver en GitHub
+          </a>
+          <a href="https://fitflow-uxmx.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Ver página
+          </a>
+        </div>
+      </div>
+      <div class="project-hero-img">
+        <img src="images/fitflow.png" alt="Captura de FitFlow" class="detail-screenshot" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <div class="project-detail-grid">
+
+      <section class="detail-section">
+        <h2 class="detail-title">Sobre el proyecto <span class="accent">_</span></h2>
+        <p class="detail-text">
+          FitFlow nació como proyecto personal para aprender desarrollo web full stack. La aplicación
+          permite a cada usuario gestionar sus propias rutinas de entrenamiento de forma privada,
+          con un sistema de autenticación JWT seguro y una interfaz limpia e intuitiva.
+        </p>
+        <p class="detail-text">
+          El panel de administración permite gestionar todos los usuarios y rutinas del sistema,
+          pensado para un posible uso en entornos de entrenamiento personal o gimnasios.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Funcionalidades <span class="accent">_</span></h2>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-icon">🔐</span>
+            <div>
+              <strong>Autenticación JWT</strong>
+              <p>Registro e inicio de sesión seguros con tokens de acceso y refresh tokens en cookies HttpOnly.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">💪</span>
+            <div>
+              <strong>CRUD de rutinas y ejercicios</strong>
+              <p>Crea, edita y elimina rutinas con sus ejercicios. Organiza sets, reps, descanso y peso.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">📅</span>
+            <div>
+              <strong>Calendario semanal</strong>
+              <p>Vista de calendario para planificar y registrar los días de entrenamiento completados.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">📈</span>
+            <div>
+              <strong>Historial de pesos y gráficos</strong>
+              <p>Registro del peso utilizado por ejercicio con visualización del progreso en gráficos Chart.js.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">🛡️</span>
+            <div>
+              <strong>Panel de administración</strong>
+              <p>Gestión de usuarios y rutinas con control de acceso por roles.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Tecnologías <span class="accent">_</span></h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <span class="tech-name">Node.js</span>
+            <span class="tech-role">Entorno de ejecución</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Express</span>
+            <span class="tech-role">Framework del servidor</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">MongoDB</span>
+            <span class="tech-role">Base de datos</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Mongoose</span>
+            <span class="tech-role">ODM para MongoDB</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">JWT</span>
+            <span class="tech-role">Autenticación</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Vanilla JS</span>
+            <span class="tech-role">Frontend</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Chart.js</span>
+            <span class="tech-role">Gráficos</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Helmet</span>
+            <span class="tech-role">Seguridad HTTP</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Lo que aprendí <span class="accent">_</span></h2>
+        <div class="learnings-grid">
+          <div class="learning-item">Arquitectura REST API</div>
+          <div class="learning-item">Autenticación y autorización</div>
+          <div class="learning-item">Gestión de sesiones con cookies</div>
+          <div class="learning-item">Seguridad web (Helmet, rate limiting)</div>
+          <div class="learning-item">Visualización de datos con Chart.js</div>
+          <div class="learning-item">Diseño de base de datos NoSQL</div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="project.js"></script>
+</body>
+</html>

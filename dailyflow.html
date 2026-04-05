@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="DailyFlow — Aplicación web para organizar rutinas diarias por día de la semana con login Google, bloques personalizables y diseño responsive." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests;" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>DailyFlow — Ángel Saiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">&#60;Dev/&#62;</div>
+    <a href="index.html" class="back-btn">← Volver al portfolio</a>
+  </nav>
+
+  <main class="project-detail">
+
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <div class="project-hero-meta">
+          <span class="project-tag">App Web</span>
+          <span class="project-tag tag-secondary">Next.js</span>
+        </div>
+        <h1 class="project-hero-title">DailyFlow</h1>
+        <p class="project-hero-desc">
+          Aplicación web para organizar rutinas diarias por día de la semana. Permite planificar
+          bloques de tiempo con título, horario, descripción y color personalizado, con inicio de
+          sesión mediante cuenta de Google.
+        </p>
+        <div class="project-hero-links">
+          <a href="https://github.com/angelsg22" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Ver en GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-hero-img">
+        <img src="images/dailyflow.png" alt="Captura de DailyFlow" class="detail-screenshot" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <div class="project-detail-grid">
+
+      <section class="detail-section">
+        <h2 class="detail-title">Sobre el proyecto <span class="accent">_</span></h2>
+        <p class="detail-text">
+          DailyFlow es una aplicación para organizar la semana de forma visual. Cada usuario tiene
+          su propio tablero semanal donde puede añadir bloques de rutina — como "Gimnasio", "Estudio"
+          o "Trabajo" — con horario de inicio y fin, descripción y un color identificativo.
+        </p>
+        <p class="detail-text">
+          El acceso se realiza mediante Google OAuth gracias a NextAuth, por lo que no es necesario
+          registrarse con usuario y contraseña. Cada usuario solo ve y gestiona sus propias rutinas.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Funcionalidades <span class="accent">_</span></h2>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-icon">🔑</span>
+            <div>
+              <strong>Login con Google OAuth</strong>
+              <p>Autenticación segura mediante NextAuth y Google Provider, sin gestión de contraseñas.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">📆</span>
+            <div>
+              <strong>Planificación semanal</strong>
+              <p>Vista organizada por días de la semana con todos los bloques de cada día.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">🎨</span>
+            <div>
+              <strong>Bloques personalizables</strong>
+              <p>Crea bloques con título, horario, descripción y color para identificarlos visualmente.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">📱</span>
+            <div>
+              <strong>Interfaz responsive</strong>
+              <p>Diseño adaptado a móvil, tablet y escritorio con Tailwind CSS.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">🔒</span>
+            <div>
+              <strong>Datos privados por usuario</strong>
+              <p>Cada cuenta solo accede a sus propias rutinas, protegidas por sesión.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Tecnologías <span class="accent">_</span></h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <span class="tech-name">Next.js 16</span>
+            <span class="tech-role">Framework React</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">TypeScript</span>
+            <span class="tech-role">Tipado estático</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">NextAuth</span>
+            <span class="tech-role">Autenticación OAuth</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Tailwind CSS</span>
+            <span class="tech-role">Estilos</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Prisma</span>
+            <span class="tech-role">ORM base de datos</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">SQLite</span>
+            <span class="tech-role">Base de datos</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Lo que aprendí <span class="accent">_</span></h2>
+        <div class="learnings-grid">
+          <div class="learning-item">Next.js App Router</div>
+          <div class="learning-item">TypeScript en proyectos reales</div>
+          <div class="learning-item">OAuth con NextAuth</div>
+          <div class="learning-item">ORM con Prisma</div>
+          <div class="learning-item">Tailwind CSS</div>
+          <div class="learning-item">API Routes en Next.js</div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="project.js"></script>
+</body>
+</html>
