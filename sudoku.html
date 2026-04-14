@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Sudoku — Aplicación web de Sudoku con generación automática de puzzles, sistema de pistas, temporizador y modo apunte. Desarrollada con Python Flask y Vanilla JS." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests;" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Sudoku — Ángel Saiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">&#60;Dev/&#62;</div>
+    <a href="index.html" class="back-btn">← Volver al portfolio</a>
+  </nav>
+
+  <main class="project-detail">
+
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <div class="project-hero-meta">
+          <span class="project-tag">App Web</span>
+          <span class="project-tag tag-secondary">Python</span>
+        </div>
+        <h1 class="project-hero-title">Sudoku</h1>
+        <p class="project-hero-desc">
+          Aplicación web de Sudoku con generación automática de puzzles mediante backtracking,
+          tres niveles de dificultad, temporizador con récord local, sistema de pistas y
+          modo apunte que calcula automáticamente los candidatos de cada celda.
+        </p>
+        <div class="project-hero-links">
+          <a href="https://github.com/angelsg22/sudoku" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Ver en GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-hero-img">
+        <img src="images/sudoku.png" alt="Captura de Sudoku" class="detail-screenshot" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <div class="project-detail-grid">
+
+      <section class="detail-section">
+        <h2 class="detail-title">Sobre el proyecto <span class="accent">_</span></h2>
+        <p class="detail-text">
+          Sudoku es una aplicación web completa donde el servidor (Python + Flask) se encarga
+          de toda la lógica del juego: genera puzzles únicos en cada partida, valida las
+          respuestas del usuario y calcula qué números son posibles en cada celda vacía.
+        </p>
+        <p class="detail-text">
+          El frontend está construido en Vanilla JS sin ninguna librería externa, comunicándose
+          con el servidor mediante fetch y JSON. Incluye un sistema de temas (modo oscuro +
+          cinco paletas de color) que persiste entre sesiones usando localStorage.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Funcionalidades <span class="accent">_</span></h2>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-icon">🧩</span>
+            <div>
+              <strong>Generación automática de puzzles</strong>
+              <p>Cada partida genera un tablero único e irrepetible mediante el algoritmo de backtracking con orden aleatorio.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <div>
+              <strong>Tres niveles de dificultad</strong>
+              <p>Fácil, medio y difícil, controlando el número de celdas eliminadas del tablero completo.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">⏱️</span>
+            <div>
+              <strong>Temporizador y récord personal</strong>
+              <p>Cronómetro en tiempo real con registro del mejor tiempo por dificultad guardado en localStorage.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">💡</span>
+            <div>
+              <strong>Sistema de pistas</strong>
+              <p>Hasta 3 pistas por partida que revelan una celda incorrecta o vacía de forma aleatoria.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">✏️</span>
+            <div>
+              <strong>Modo apunte</strong>
+              <p>Muestra automáticamente los números candidatos en cada celda vacía y los actualiza al introducir un número definitivo.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">🎨</span>
+            <div>
+              <strong>Temas y paletas de color</strong>
+              <p>Modo oscuro y cinco paletas de color (azul, verde, púrpura, rosa, naranja) que se guardan entre sesiones.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Tecnologías <span class="accent">_</span></h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <span class="tech-name">Python</span>
+            <span class="tech-role">Lógica del juego</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Flask</span>
+            <span class="tech-role">Servidor web y API REST</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">HTML / CSS</span>
+            <span class="tech-role">Estructura y estilos</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">JavaScript</span>
+            <span class="tech-role">Lógica del navegador</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">CSS Variables</span>
+            <span class="tech-role">Sistema de temas</span>
+          </div>
+          <div class="tech-card">
+            <span class="tech-name">Fetch API</span>
+            <span class="tech-role">Comunicación cliente-servidor</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2 class="detail-title">Lo que aprendí <span class="accent">_</span></h2>
+        <div class="learnings-grid">
+          <div class="learning-item">Algoritmo de backtracking</div>
+          <div class="learning-item">API REST con Flask</div>
+          <div class="learning-item">Sesiones en Flask</div>
+          <div class="learning-item">CSS Grid avanzado</div>
+          <div class="learning-item">Sistema de temas con CSS Variables</div>
+          <div class="learning-item">localStorage para persistencia</div>
+          <div class="learning-item">Fetch API y JSON</div>
+          <div class="learning-item">Gestión de estado en Vanilla JS</div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="project.js"></script>
+</body>
+</html>
